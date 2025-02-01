@@ -6,6 +6,12 @@ import { useNavigate } from 'react-router-dom'
 const RegisterPage = () => {
     return (
         <div className="isolate md:isolation-auto px-5 py-5 sm:py-10 lg:px-10">
+            <div
+                aria-hidden="true"
+                className="absolute inset-x-0"
+            >
+
+            </div>
             <div>
                 <h1 className="text-5xl">Registro</h1>
                 <RegisterForm/>
