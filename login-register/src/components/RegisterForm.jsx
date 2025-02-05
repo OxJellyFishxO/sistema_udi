@@ -72,7 +72,9 @@ const RegisterForm = () => {
                     <p>{errors.pdfArchivo.message}</p>
                 )}
 
-                <button type="submit" onClick={handleSubmit(onSubmit)}>
+                <button 
+                    className="submit"
+                    type="submit" onClick={handleSubmit(onSubmit)}>
                     Registrar
                 </button>
             </form>

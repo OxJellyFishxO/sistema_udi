@@ -1,15 +1,14 @@
 import React from "react";
 import { useMutation } from '@apollo/client';
-import RegisterForm from "../components/RegisterForm";
+import LoginForm from "../components/loginForm";
 import { useNavigate } from 'react-router-dom'
 
-const RegisterPage = () => {
+const LoginPage = () => {
     return (
             <div>
-                <RegisterForm/>
+                <LoginForm/>
             </div>
     )
 };
 
-export default RegisterPage;
-
+export default LoginPage;
