@@ -9,7 +9,7 @@ $btnH: 40px;
 $formW: $contWidth - $imgWidth;
 
 @mixin signUpActive {
-    .cont.s--signup & {
+    .container.s--signup & {
         @content;
     }
 }
