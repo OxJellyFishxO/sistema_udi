@@ -1,12 +1,17 @@
-import { useState } from 'react'
+import FooterPage from './pages/FooterPage'
 import './styles/tailwind/tailwind.css'
+import {BrowserRouter as Router, Routes, Route} from 'react-router'
 
-function App() {
+function FooterApp() {
     return (
         <>
-            <p className='text-3xl font-bold underline'>Footer</p>
+            <Router>
+                <Routes>
+                    <Route path='/' element={<FooterPage />}></Route>
+                </Routes>
+            </Router>
         </>
     )
 }
 
-export default App
+export default FooterApp
