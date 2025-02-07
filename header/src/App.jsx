@@ -1,10 +1,8 @@
-import { useState } from 'react'
 import './styles/tailwind/tailwind.css'
 import {BrowserRouter as Router, Routes, Route} from 'react-router';
 import HeaderPage from './pages/headerpage';
 
-function App() {
-
+function HeaderApp() {
     return (
         <>
             <Router>
@@ -16,4 +14,4 @@ function App() {
     )
 }
 
-export default App;
+export default HeaderApp
