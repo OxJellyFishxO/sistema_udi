@@ -19,7 +19,7 @@ const IndexPage = () => {
                     <div className="swiper">
                         <div className="swiper-wrap">
                             <div>
-                                <section>
+                                <section    >
                                     <h2>UDI</h2>
                                     <p>
                                         Para personal de la Unidad de Informática
