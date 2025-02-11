@@ -1,27 +1,47 @@
 import React from "react";
-import Index from "../components/indexUDI";
+import Main from "../components/MainUDI";
 
 const IndexPage = () => {
     return (
         <>
-            <section className="w-full flex items-center justify-center max-w-4xl">
-                <article className="mr-[25px] transition-all duration-4000 ease-in-out bg-white w-[33%] relative rounded-2xl overflow-hidden shadow-[0_13px_10px_-7px_rgba(0,0,0,0.1)] hover:shadow-[0_30px_18px_-8px_rgba(0,0,0,0.1)]">
-                    <div>
-                        <a>
-                            <div>
-
-                            </div>
-                        </a>
+            <main>
+                <div className="grid grid-cols-2 gap-12">
+                    <section>
                         <div>
-                            <span>Profesores</span>
-                            <h1>Préstamo de Aulas</h1>
-                            <p>El sistema de préstamo de aulas de laboratorio permite a profesores y personal autorizado solicitar y reservar espacios en los laboratorios de cómputo para actividades académicas</p>
+                            <span className="span-Plantel">IPN - ENCB - UDI</span>
+                            <h1 className="h1-Principal">Unidad de Informática</h1>
+                            <hr  className="hr-Main"/>
+                            <p className="p-Main">La UDI tiene el compromiso de dar seguimiento a las solución de problemas técnicos de los equipos de cómputo.</p>
+                            <a className="a-Main" href="https://www.encb.ipn.mx/servicios/tics.html">Cónocenos</a>
+                        </div>
+                    </section>
+
+                    <div className="swiper">
+                        <div className="swiper-wrap">
+                            <div>
+                                <section>
+                                    <h2>UDI</h2>
+                                    <p>
+                                        Para personal de la Unidad de Informática
+                                    </p>
+                                    <a href='https://www.encb.ipn.mx/servicios/tics.html' target="_blank">Explorar</a>
+                                </section>
+                            </div>
+
+                            <div>
+                                <section>
+                                    <h2>Registro de Aulas</h2>
+                                    <p>Aqui puedes realizar la inscripción del laboratorio</p>
+                                    <a href="https://www.encb.ipn.mx/servicios/tics.html" target="_blank">Explorar</a>
+                                </section>
+                            </div>
                         </div>
                     </div>
-                </article>
-            </section>
+                </div>
+                
+                </main>
             
-            <Index />
+            <Main />
         </>
     )
 }

@@ -1,3 +1,55 @@
-.texto {
-    
+@import '../tailwind/tailwind.css';
+
+@import '../../fonts/red-hat-display/font.css';
+
+* {
+    font-family: 'Red Hat display', sans-serif;
+    font-weight: inherit;
+    @apply box-border m-0 p-0;
 }
+
+body, html {
+    @apply w-full h-full bg-[#f5f5f5] flex;
+}
+
+main {
+    @apply relative w-[90%] mx-0 my-auto min-h-screen py-12;
+}
+
+main a {
+    @apply inline-block decoration-0 no-underline uppercase text-[#999] font-medium bg-white
+    rounded-[3.125rem] duration-400 ease-in-out;
+}
+
+.span-Plantel {
+    @apply uppercase tracking-widest text-base text-[#999];
+}
+
+.h1-Principal {
+    @apply capitalize tracking-wider font-black text-5xl bg-[#8d0066] bg-linear-[45deg,#8d0066,#000] bg-[100%] bg-repeat bg-clip-text text-transparent;
+}
+
+.hr-Main {
+    @apply block bg-[#8d0066] h-1 w-28 border-none mt-5 mr-0 mb-6 ml-0;
+}
+
+.p-Main {
+    @apply leading-6;
+}
+.a-Main {
+    @apply border-2 border-solid border-[#666] mt-9 px-4 py-4 hover:border-2 hover:border-solid hover:border-[#8d0066] hover:text-white hover:bg-[#8d0066];
+}
+
+.swiper {
+    @apply w-full pt-14;
+}
+
+
+
+
+
+
+
+
+
+

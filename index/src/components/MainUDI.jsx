@@ -1,6 +1,6 @@
 import React from "react";
 
-const Index = () => {
+const Main = () => {
     return (
         <>
             <h1>
@@ -10,4 +10,4 @@ const Index = () => {
     )
 }
 
-export default Index;
+export default Main;
