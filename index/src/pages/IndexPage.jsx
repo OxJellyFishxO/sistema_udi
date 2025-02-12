@@ -1,11 +1,12 @@
 import React from "react";
 import Main from "../components/MainUDI";
+import Carousel from "../components/CarouselMain";
 
 const IndexPage = () => {
     return (
         <>
             <main>
-                <div className="grid grid-cols-2 gap-12">
+                <div className="grid grid-cols-2 gap-12 justify-center flex">
                     <section>
                         <div>
                             <span className="span-Plantel">IPN - ENCB - UDI</span>
@@ -15,33 +16,10 @@ const IndexPage = () => {
                             <a className="a-Main" href="https://www.encb.ipn.mx/servicios/tics.html">Cónocenos</a>
                         </div>
                     </section>
-
-                    <div className="swiper">
-                        <div className="swiper-wrap">
-                            <div>
-                                <section    >
-                                    <h2>UDI</h2>
-                                    <p>
-                                        Para personal de la Unidad de Informática
-                                    </p>
-                                    <a href='https://www.encb.ipn.mx/servicios/tics.html' target="_blank">Explorar</a>
-                                </section>
-                            </div>
-
-                            <div>
-                                <section>
-                                    <h2>Registro de Aulas</h2>
-                                    <p>Aqui puedes realizar la inscripción del laboratorio</p>
-                                    <a href="https://www.encb.ipn.mx/servicios/tics.html" target="_blank">Explorar</a>
-                                </section>
-                            </div>
-                        </div>
-                    </div>
+                    
+                    <Carousel />
                 </div>
-                
-                </main>
-            
-            <Main />
+            </main>
         </>
     )
 }
