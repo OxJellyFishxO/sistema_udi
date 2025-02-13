@@ -1,5 +1,4 @@
 import React from "react";
-import Main from "../components/MainUDI";
 import Carousel from "../components/CarouselMain";
 
 const IndexPage = () => {
@@ -7,7 +6,7 @@ const IndexPage = () => {
         <>
             <main>
                 <div className="grid grid-cols-2 gap-12 justify-center flex">
-                    <section>
+                    <section className="flex justify-center items-center">
                         <div>
                             <span className="span-Plantel">IPN - ENCB - UDI</span>
                             <h1 className="h1-Principal">Unidad de Informática</h1>
