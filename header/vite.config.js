@@ -38,4 +38,8 @@ export default defineConfig({
         // Deshabilita la división del código CSS, un archivo css unico styles.css
         cssCodeSplit: false,
     },
+
+    preview: {
+        port: 4181,
+    },
 })

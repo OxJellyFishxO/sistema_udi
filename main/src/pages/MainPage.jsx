@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "headerApp/HeaderApp";
-import Footer from "footerApp/FooterApp";
 import IndexApp from "indexApp/IndexApp"
 
 const MainPage = () => {
@@ -8,7 +7,6 @@ const MainPage = () => {
         <>
             <Header />
             <IndexApp />
-            <Footer />
         </>
     )
 }
