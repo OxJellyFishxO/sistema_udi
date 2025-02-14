@@ -38,7 +38,7 @@ main a {
     @apply leading-6;
 }
 .a-Main {
-    @apply border-2 border-solid border-[#666] mt-9 px-4 py-4 hover:border-2 hover:border-solid hover:border-[#8d0066] hover:text-white hover:bg-[#8d0066];
+    @apply border-2 border-solid border-[#666] mt-9 px-3.5 py-4 hover:border-2 hover:border-solid hover:border-[#8d0066] hover:text-white hover:bg-[#8d0066];
 }
 
 .swiper-Main {
@@ -58,7 +58,11 @@ main a {
 }
 
 .div-imagen {
-    @apply my-4 bg-center bg-cover bg-no-repeat w-full h-full rounded-t-[12px] bg-[url(/index/img-login-UDI.png)];
+    @apply my-4 bg-center bg-cover bg-no-repeat w-full h-full rounded-t-[12px] items-center justify-center flex;
+}
+
+.img-UDI {
+    @apply w-[300px] h-auto
 }
 
 .div-h2 {
@@ -74,7 +78,7 @@ main a {
 }
 
 .div-a-explorar {
-    @apply my-8
+    @apply my-8 py-2
 }
 
 

@@ -12,7 +12,9 @@ export default defineConfig({
 
             remotes: {
                 headerApp: "http://localhost:4181/assets/remoteEntry.js",
-                footerApp: "http://localhost:4182/assets/remoteEntry.js"
+                footerApp: "http://localhost:4182/assets/remoteEntry.js",
+                indexApp: "http://localhost:4183/assets/remoteEntry.js",
+
             },
             shared: ["react", "react-dom"],
         }),
