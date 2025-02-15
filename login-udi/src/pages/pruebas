@@ -1,0 +1,83 @@
+//Paramatros para utilizar el hook form React
+    const {
+        register,
+        handleSubmit,
+        setError,
+        watch,
+        formState: { errors },
+    } = useForm();
+
+
+    const onSubmit = async (data) => {
+        
+                const formData = new FormData();
+                formData.append('email', data.correoUsuario);
+                formData.append('password', data.passPersona);
+
+                alert(JSON.stringify(formData));
+                
+                try {
+                    const response = await execute({
+                        data: formData,
+                    });
+
+                    console.log(response);
+                } 
+                
+                catch (err) {
+                    setError('Error al iniciar sesión. Verifica tus credenciales.');
+                }
+
+    }
+
+    const respuesta = () => {
+        console.log(data);
+    }
+
+    // Regresar el formulario
+    return (
+        <>
+        <form onSubmit={handleSubmit(onSubmit)}>
+                        {/*Correo de persona*/}
+                        <label>
+                            <span>Correo de Usuario</span>
+                            <input
+                                type="email" {
+                                    ...register(
+                                        "correoPersona", {
+                                            required: "Se requiere el número del empleado"
+                                        }
+                                    )
+                                } 
+                                placeholder="Correo electrónico"
+                            />
+                            {errors.correoUsuario && (
+                                <p>{errors.correoUsuario.message}</p>
+                            )}
+                        </label>
+                        
+                        {/*Password*/}
+                        <label>
+                            <span>Contraseña</span>
+                            <input 
+                                type="password" {
+                                    ...register(
+                                        "passPersona", {
+                                            required:"Se requiere una contraseña valida"
+                                        }
+                                    )
+                                }
+                            />
+                            {errors.passPersona && (
+                                <p>{errors.passPersona.message}</p>
+                            )}
+                        </label>
+                        
+                        <button 
+                            className="submit"
+                            type="submit" onClick={handleSubmit(onSubmit)}>
+                            Iniciar Sesión
+                        </button>
+                    </form>
+                </>
+            );      

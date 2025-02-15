@@ -1,5 +1,0 @@
-@import '../tailwind/tailwind.css';
-
-h1 {
-    @apply text-2x1;
-}
